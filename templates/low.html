@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+<!--Bootstrap uses HTML elements and CSS properties that require the HTML5 doctype.-->
+<html lang="en">
+    <head>
+        <title>Safe Travel</title>
+        <style>
+            body {background-color: powderblue;}
+            h1   {color: blue;}
+            p    {color: black;}
+             p.intro {font-family: "Lucida Console", Courier, monospace;}
+             h6.title   {text-align: left;font-family: "Lucida Console", Courier, monospace;}
+        </style>
+     
+        <meta charset="utf-8">
+      
+        <!-- Responsive (Mobile) Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Tags to include BootStrap CSS and BootStrap JS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     
+         <script>
+         	function totalInfo1(){
+         			var loc1;
+         			var loc2;
+         			var descrip1;
+         			var descrip2;
+         			loc1=document.getElementById("locselect1").value;
+         			loc2=document.getElementById("locselect2").value;
+         			descrip1='hi1';
+         			descrip2='hi2';
+
+         			document.getElementById("info1").innerHTML="The recommended location information:"+descrip1;
+         			document.getElementById("info2").innerHTML="The recommended location information:"+descrip2;
+         		}
+	     	function totalInfo2(){
+         			var loc2;
+         			var descrip2;
+         			loc1=document.getElementById("locselect1").value;
+         			descrip2='hi2'
+         			document.getElementById("info2").innerHTML="The recommended location information:"+descrip2;
+         		}
+   		</script>
+    </head>
+
+
+    <body style="background-color:#E0FFFF;">
+        <div class="container-fluid">
+<br>
+     <p><a href="{{ url_for('home') }}">Back</a></p>
+<br>
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-12 col-sm-12">
+          
+          </div>
+
+
+<div class="col-lg-4 col-md-12 col-sm-12">
+<h6 class="title">Below are the list of region matching selected COVID-19 risk level:</h6>
+<h6 class="title">(First three from NY, others from LA)</h6>
+<br>
+	            <div class="w-200"></div>
+	            <div class="row">  
+	            	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+	          <p><span id="info1"></span></p>
+	         <p><span id="info2"></span></p>
+	         <p>{{mycontent2}}</p>
+           <form action="." method="POST"> 
+            <label for="userinput">PLease input the region you want to visit:</label>
+            <br>
+        <input type="text" name="userinput">
+        <input type="submit" name="form" value="Send">
+        <br><br>
+        <h6 class="title">Here are the relative information of the recommended airbnb stays:</h6>
+        <p>{{mycontent1}}</p>
+    </form>
+	           			
+	           		</div>
+	       		</div>
+</div>
+	</div>
+	       		</div>
+	       
+	      </div></div>
+      </body>

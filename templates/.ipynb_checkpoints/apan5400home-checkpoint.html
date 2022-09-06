@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Home</title>
+        <link rel="stylesheet" type="text/css" href="termproj.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+        <!-- Responsive (Mobile) Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Tags to include BootStrap CSS and BootStrap JS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <!-- jQuery -->
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	    <!-- Our plugin: jQuery Tooltip Basic plugin by Emre Pişkin -->
+	    <script type="text/javascript" src="jquery.captcha.basic.min.js"></script>
+	    <script type="text/javascript" src="jquery.captcha.basic.js"></script>
+	    <script type="text/javascript">
+
+  		</script>
+	    <script type="text/javascript">
+	    	
+			$(document).ready(function () {
+			$('#my-form').captcha();
+			});
+
+  		</script>
+
+		
+	</head>
+
+
+	<body>
+
+    <!-- Title -->
+    <h3 class="title">Safe Travel with Airbnb</h3>
+    <div class="col-lg-6 col-sm-12">
+            <p class="intro">Please indicate where you want to travel under current pandemic situation! (Places with low, medium-low, medium-high or high risks of COVID-19.)</p>
+          </div>
+          <div class="col-lg-12 col-sm-12">
+    <div class="col-12">
+       <form action="." method="POST">
+          <label for="inputState">Risk Level</label>
+          <select name="inputState" class="form-control">
+            <option selected>Low</option>
+            <option selected>Medium Low</option>
+            <option selected>Medium High</option>
+            <option selected>High</option>
+          </select>
+         <div class="col-lg-12">
+            <input type="submit" name='form1' value="Generate">
+          </div>
+          <p><span name="inputState"></span></p>
+           </form>
+           <hr> 
+           <form action="." method="POST">
+        <input type="text" name="userinput">
+        <input type="submit" name="my-form" value="Send">
+    </form>
+        </div>
+        <!--
+		<div>
+			<form id="my-form">
+			<a href="low.html" class="btn btn-light" role="button" aria-pressed="true">Low</a>
+			<a href="medium_low.html" class="btn btn-light" role="button" aria-pressed="true">Medium Low</a>
+			<a href="medium_high.html" class="btn btn-light" role="button" aria-pressed="true">Medium High </a>
+			<a href="high.html" class="btn btn-light" role="button" aria-pressed="true">High</a>
+			</form>
+		</div>
+-->
+	</body>
+</html>

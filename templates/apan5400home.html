@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Safe Travel</title>
+    <style>
+      body {background-color: powderblue;}
+      h1   {color: blue;}
+      p    {color: black;}
+      h3.title   {text-align: center;font-family: "Lucida Console", Courier, monospace;}
+    div.all{background-color: #E0FFFF;}
+    p.intro {font-family: "Lucida Console", Courier, monospace;}
+
+     
+    </style>
+       <!-- <link rel="stylesheet" type="text/css" href="termproj.css"> -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+        <!-- Responsive (Mobile) Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Tags to include BootStrap CSS and BootStrap JS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <!-- jQuery -->
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	    <!-- Our plugin: jQuery Tooltip Basic plugin by Emre Pişkin -->
+	    <script type="text/javascript" src="jquery.captcha.basic.min.js"></script>
+	    <script type="text/javascript" src="jquery.captcha.basic.js"></script>
+	    <script type="text/javascript">
+
+  		</script>
+	    <script type="text/javascript">
+	    	
+			$(document).ready(function () {
+			$('#my-form').captcha();
+			});
+
+  		</script>
+
+		
+	</head>
+
+<div class="container-fluid">
+	<body style="background-color:#E0FFFF;">
+ 
+    <!-- Title -->
+   
+    <h3 class="title">Safe Travel with Airbnb</h3>
+
+    <hr>
+    <br><br>
+     <div class="row">
+
+      <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="thumbnail">
+              <a href="https://www.airbnb.com/a/stays/?c=.pi0.pk36239956_25650614176&ghost=true&gclid=Cj0KCQjwgYSTBhDKARIsAB8KukvqixT6Qsr98M6K_v6nKt0l9DBK7Rg1ILG6berpLEhikIkhzJTgkO8aAuOkEALw_wcB" target="_blank" class="btn btn-light" role="button" aria-pressed="true">Open Airbnb website</a>
+              <br><br><br>
+              <a href=" https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/" target="_blank" class="btn btn-light" role="button" aria-pressed="true">Travel advice from Travel.State.Gov</a>
+            </div>
+          </div>
+
+
+         
+    <div class="col-lg-4 col-sm-12">
+
+            <p class="intro">Please indicate where you want to travel under current pandemic situation! (COVID-19 risk level: low, medium-low, medium-high or high)</p>
+        
+         
+     <form action="." method="POST">
+      
+          <label for="inputState">Risk Level</label>
+          <select name="inputState" class="form-control">
+            <option selected>Low</option>
+            <option selected>Medium Low</option>
+            <option selected>Medium High</option>
+            <option selected>High</option>
+          </select>
+      
+            <input type="submit" name='form' value="Generate">
+            
+
+
+          <p class="intro"></p>
+          <p><span name="mycontent"></span></p>
+          <p>{{ mycontent }}</p>
+           </form>
+           <hr> 
+
+        </div>
+   
+
+          
+          
+          
+ 
+</div>
+        </div>
+	</body>
+</html>
