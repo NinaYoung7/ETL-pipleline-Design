@@ -10,11 +10,10 @@ Time spent: **30** hours spent in total
 
 This is the group project to design and implement an ETL pipeline and the underlying data warehouse to accommodate Big Data application in Managing Data course. We designed a recommendation system that displays house information and allows users filter Covid-19 risk levels and keywords to find the perfect Airbnb houses in the community level to stay in with  Covid-19 consideration. We utilized PostgreSQL, MongoDB, Flask to build the data pipline and implemnented in the class.
 
- ```md
-    ![alt text](assets:images/Screenshot.png)
- ```
 
 
+
+<img width="1037" alt="Screenshot" src="https://user-images.githubusercontent.com/103723722/188758999-d944ca0e-9a09-4de8-b063-6fccc3b4c6ac.png">
 
 
 ## License
