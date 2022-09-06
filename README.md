@@ -12,7 +12,7 @@ This is the group project to design and implement an ETL pipeline and the underl
 
  ```md
     ![alt text](assets/images/Screenshot.png)
-    ```
+ ```
 
 
 
